@@ -75,6 +75,7 @@ h1 {
   font-size: 7vw;
   line-height: 7.5rem;
   color: #c55865;
+  text-shadow: white 1px 0 10px;
 }
 
 .shipping-free {
@@ -604,7 +605,7 @@ footer {
   }
 
   .phrase {
-    font-size: 12vw;
+    font-size: 4rem;
   }
 
   .product-info-one-bis {
