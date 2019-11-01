@@ -1,0 +1,637 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,700|Space+Mono:400,700&display=swap");
+
+body {
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.125rem;
+  line-height: 3.125rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 37.5rem;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+#navbar {
+  height: 5rem;
+  background: #faf9f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 3% 0 3%;
+}
+
+#navbar h1 {
+  word-spacing: 10px;
+}
+
+#image-one {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+    url("https://d3ba08y2c5j5cf.cloudfront.net/wp-content/uploads/2019/08/19171800/THE-TEN-1920x1280.jpg");
+  width: 100%;
+  min-height: 37.5rem;
+  background-size: content;
+  background-position: center;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phrase {
+  display: flex;
+  width: 70%;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 7vw;
+  line-height: 7.5rem;
+  color: #c55865;
+}
+
+.shipping-free {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c55865;
+  height: 1.875rem;
+  font-family: Space Mono;
+}
+
+.menu-bis {
+  display: flex;
+  justify-content: space-between;
+  padding: 4% 0 4% 5%;
+}
+
+.incl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c55865;
+  border-radius: 0.3125rem;
+  width: 15.25rem;
+  height: 4.375rem;
+  transform: rotate(-2deg);
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 2.75rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.cart-item {
+  position: relative;
+  display: flex;
+}
+
+.count {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: #ffcc33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  font-size: 0.875rem;
+}
+
+.menu-right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 12.5rem;
+  font-family: Space Mono;
+  font-style: normal;
+  font-size: 1.75rem;
+}
+
+.cate {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 0 0 3.125rem 0;
+}
+
+.cate-bis > img {
+  height: 25rem;
+  object-fit: cover;
+  width: 37.5rem;
+}
+
+.cate-bis {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  text-align: center;
+  margin: 1.25rem;
+  display: inline-block;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+.cate-bis h3 {
+  padding: 0.625rem;
+  font-weight: bold;
+}
+
+.cate-bis > a {
+  text-decoration: none;
+  color: black;
+  font-family: Space Mono;
+  text-transform: uppercase;
+  border-bottom: 0.1875rem solid #c55865;
+  display: inline-block;
+  padding: 0rem 0 0.3125rem 0;
+}
+
+.round {
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: #c55865;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  line-height: 140%;
+  position: absolute;
+  top: -8.125rem;
+  right: 6.25rem;
+}
+
+.incl-bis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c55865;
+  border-radius: 0.3125rem;
+  width: 15.25rem;
+  height: 4.375rem;
+  transform: rotate(-2deg);
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 2.75rem;
+  margin-left: 5.9375rem;
+}
+
+#sneaker {
+  padding: 4% 0;
+  position: relative;
+  background-image: url("../image/Background.png");
+}
+
+.product-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 9.375rem;
+  width: 100%;
+}
+
+.image-container {
+  width: 43.75rem;
+  object-fit: cover;
+  padding-bottom: 50px;
+}
+
+.image-container img:hover {
+  background-color: red;
+  mix-blend-mode: difference;
+  opacity: 1;
+}
+
+.product-image img {
+  width: 100%;
+}
+
+.product-info-one {
+  position: relative;
+  flex-basis: 1 0 auto;
+  padding-bottom: 5.75rem;
+}
+
+.test-product {
+  text-align: center;
+  margin: 1.25rem;
+  display: inline-block;
+}
+
+.product-info-one-bis {
+  position: absolute;
+  display: flex;
+  top: -110px;
+  background-color: #f5f5f5;
+  padding: 1.875rem 0;
+  width: 100%;
+}
+
+.buy-product {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.color {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  font-size: 0.875rem;
+}
+
+.color-two {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  font-size: 0.875rem;
+}
+
+.color-three {
+  background-color: #e5d09e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  font-size: 0.875rem;
+}
+
+.color-for {
+  background-color: #befe46;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  font-size: 0.875rem;
+}
+
+.color-five {
+  background-color: #4c92ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  font-size: 0.875rem;
+}
+
+.colors {
+  display: flex;
+  justify-content: space-evenly;
+  width: 9.375rem;
+}
+
+.model {
+  font-weight: bold;
+}
+
+.button-atc {
+  border: 0.125rem solid black;
+  border-radius: 0.1875rem;
+  width: 9.375rem;
+  height: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.browse-all {
+  border: 0.125rem solid black;
+  border-radius: 0.1875rem;
+  width: 12.5rem;
+  height: 3.75rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.center-browse {
+  display: flex;
+  justify-content: center;
+}
+
+.philosophy {
+  position: relative;
+  background-image: url("../image/flight-club-miami-pop-up-1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.relative {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43.75rem;
+  height: 43.75rem;
+  padding: 3.125rem;
+}
+
+.philosophy-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 31.25rem;
+}
+
+.big {
+  font-size: 3.125rem;
+  font-weight: bold;
+}
+
+.normal {
+  font-size: 1.25rem;
+}
+
+.new-letter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 25rem;
+  align-items: center;
+}
+
+.newsletter {
+  display: flex;
+}
+
+.newsletter svg {
+  border-top: 0.0625rem solid black;
+  border-right: 0.0625rem solid black;
+  border-bottom: 0.0625rem solid black;
+  height: 3.875rem;
+  width: 5.625rem;
+}
+
+.new-letter p {
+  font-family: "Space Mono";
+  font-size: 1.5625rem;
+}
+
+/* .test {
+  font-size: 3.125rem;
+} */
+.email {
+  height: 2.5rem;
+  width: 15.625rem;
+  padding: 1.875rem;
+  border: 0.0625rem solid black;
+}
+
+input {
+  border: none;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  height: 5rem;
+  background: #c55865;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 5%;
+  font-family: "Space Mono";
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 6.25rem;
+}
+
+.menu-resp {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .menu-resp {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  footer {
+    height: 10rem;
+    background: #c55865;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Space Mono";
+    padding-left: -3rem;
+  }
+
+  .round {
+    display: none;
+  }
+
+  .menu-bis p {
+    display: none;
+  }
+
+  .incl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c55865;
+    border-radius: 0.3125rem;
+    width: 9.25rem;
+    height: 3rem;
+    transform: rotate(-2deg);
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 2.75rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .browse-all {
+    border: 0.125rem solid black;
+    border-radius: 0.1875rem;
+    width: 6.5rem;
+    height: 2.75rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+
+  .new-letter p {
+    font-family: "Space Mono";
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .new-letter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 15rem;
+    align-items: center;
+  }
+
+  .email {
+    height: 2.5rem;
+    width: 11.625rem;
+    padding: 1.875rem;
+    border: 0.0625rem solid black;
+  }
+
+  .newsletter svg {
+    border-top: 0.0625rem solid black;
+    border-right: 0.0625rem solid black;
+    border-bottom: 0.0625rem solid black;
+    height: 3.875rem;
+    width: 3.625rem;
+  }
+
+  .product-info-one {
+    width: 90%;
+    height: 90%;
+  }
+
+  .image-container {
+    width: 100%;
+    margin-top: 110px;
+  }
+
+  .buy-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .relative {
+    width: 90%;
+  }
+
+  .philosophy {
+    height: 30vh;
+  }
+
+  .relative {
+    width: 90%;
+    height: 90%;
+  }
+
+  .big {
+    font-size: 2.2rem;
+  }
+
+  .normal {
+    font-size: 1rem;
+  }
+
+  .philosophy-text {
+    height: 200px;
+  }
+
+  .phrase {
+    font-size: 12vw;
+  }
+
+  .product-info-one-bis {
+    top: -100px;
+  }
+}
+
+.open nav {
+  display: block;
+}
+
+nav {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  background-color: #faf9f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 150px;
+  width: 100%;
+  line-height: 40px;
+  display: none;
+}
+
+nav li {
+  margin-left: 20px;
+  font-family: "Space Mono";
+  font-size: 24px;
+}
