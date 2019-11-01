@@ -7,7 +7,7 @@ nav.addEventListener("click", () => {
   document.body.classList.toggle("open");
 });
 
-const shipping = document.querySelector(".shipping-bar");
+const shipping = document.querySelector(".shipping-bar svg");
 shipping.addEventListener("click", () => {
   document.body.classList.toggle("open-shipping");
 });
