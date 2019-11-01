@@ -6,3 +6,8 @@ nav.addEventListener("click", () => {
   console.log("ici");
   document.body.classList.toggle("open");
 });
+
+const shipping = document.querySelector(".shipping-bar");
+shipping.addEventListener("click", () => {
+  document.body.classList.toggle("open-shipping");
+});

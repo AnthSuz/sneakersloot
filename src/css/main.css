@@ -87,6 +87,23 @@ h1 {
   font-family: Space Mono;
 }
 
+.shipping-bar {
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  background-color: #c55865;
+}
+
+.shipping-bar p {
+  flex: 1;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.shipping-bar svg {
+  display: flex;
+}
+
 .menu-bis {
   display: flex;
   justify-content: space-between;
@@ -635,4 +652,8 @@ nav li {
   margin-left: 20px;
   font-family: "Space Mono";
   font-size: 24px;
+}
+
+.open-shipping .shipping-bar {
+  display: none;
 }
